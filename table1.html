@@ -1,0 +1,81 @@
+<!doctype html>
+<head>
+<title> Table</title>
+<style type="text/css">
+	 #main{
+	 	color: Red;
+	 	background-color: yellow; 
+	 	padding: 10px;
+	 }
+	 h1{
+	 	text-align: center;
+	 }
+	 #para{
+	 	background-color: pink; 
+	 	color: blue;
+	 	column-count: 10;
+	 }
+	 #table{
+	 	padding: 10px;
+	 	border: 2px solid blue;
+   		border-radius: 4px;
+	 }
+	 button{
+	 	padding: 10px;
+	 	border: 2px solid;
+	 	border-color: white;
+	 	color: white;
+	 	padding: 20px;
+	 	border-radius: 25px;
+	 	background-color: green; 
+	 	font-size: 16px; 
+	 }
+	 button:hover {
+    background-color: #008CBA;
+    color: white;
+}
+</style>
+
+
+<script type="text/javascript">
+	
+	function demo()
+		{
+			var x=parseInt(document.getElementById('table').value);
+			var y=""; 
+			for (var i= x; i <= 10; i++)
+			{
+
+					for (var j=1; j <= 10; j++)
+						{
+							var z =x*j;
+							y += +x +" X " +j +"= " +z  +"<br>";
+									//document.write(+x +" X " +j +"= " +z  +"<br>");
+							document.getElementById("para").innerHTML = y;
+						}
+							++x;
+			}
+				
+
+		}
+	
+			
+
+</script>
+</head>
+<body bgcolor="red">
+	<div id="main">
+		<div>
+			<h1>Mathematical Table </h1>
+			<input type="number" placeholder="please enter the number" id="table">
+			<button onclick="demo()"> Click Here </button>
+			<p id="para">
+				
+			</p>
+
+		</div>
+		
+
+	</div>
+</body>
+</html>

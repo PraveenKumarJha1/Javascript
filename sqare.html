@@ -1,0 +1,92 @@
+<!doctype html>
+<head>
+<title> Table</title>
+<style type="text/css">
+	 #main{
+	 	color: Red;
+	 	background-color: yellow; 
+	 	padding: 10px;
+	 }
+	 h1{
+	 	text-align: center;
+	 }
+	 #para{
+	 	background-color: pink; 
+	 	color: blue;
+	 	column-count: 5;
+	 	column-gap: 1px;
+	 		 		 }
+	 #para1{
+	 	background-color: white;
+	 	color: blue;
+	 	column-count: 5;
+	 	column-gap: 1px;
+	 }
+	 #table{
+	 	padding: 10px;
+	 	border: 2px solid blue;
+   		border-radius: 4px;
+	 }
+	 button{
+	 	padding: 10px;
+	 	border: 2px solid;
+	 	border-color: white;
+	 	color: white;
+	 	padding: 20px;
+	 	border-radius: 25px;
+	 	background-color: green; 
+	 	font-size: 16px; 
+	 }
+	 button:hover {
+    background-color: #008CBA;
+    color: white;
+}
+</style>
+
+
+<script type="text/javascript">
+	
+	function demo()
+		{
+			var x=parseInt(document.getElementById('table').value);
+			var y=""; 
+			var r="";
+			for (var j=x; j <= 50; j++)
+			{
+				var z =j*j;
+				y += " the square of " +j +"= " +z  +"<br>";
+						//document.write(+x +" X " +j +"= " +z  +"<br>");
+				document.getElementById("para").innerHTML = y;
+			}
+
+
+
+			for (var n=x; n <= 50; n++)
+			{
+				var m =n*n*n;
+				r += " the cube of " +n +"= " +m  +"<br>";
+				document.getElementById("para1").innerHTML = r;
+			}
+		}
+	
+			
+
+</script>
+</head>
+<body bgcolor="red">
+	<div id="main">
+		<div>
+			<h1>Mathematical Table </h1>
+			<input type="number" placeholder="please enter the number" id="table">
+			<button onclick="demo()"> Click Here </button>
+			<h2 style="text-align: center;">Square table</h2>
+			<p id="para"></p>
+			<h3 style="text-align: center;">Cube table</h3>
+			<p id="para1"></p>
+
+		</div>
+		
+
+	</div>
+</body>
+</html>

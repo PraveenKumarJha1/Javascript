@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>he</title>
+	<script type="text/javascript">
+		function demo(){
+				var input = parseInt(document.getElementById('num').value);
+				var x = parseInt(document.getElementById("num1").value);
+				var y = parseInt(document.getElementById("num2").value);
+				switch( input )
+				{
+					case 1 :
+							var add= x + y ;
+						document.write("Addition of x and y" +add );
+							
+						break;
+				case 2 :
+							var sub= x - y ;
+						document.write("Subrstraction of x and y" +sub);
+						break;
+					
+				case 3 :
+							var mul= x * y ;
+						document.write("Multiplication of x and y" +mul);
+						break;
+
+				case 4 :
+						var di = x / y ;
+					document.write("Divition of x and y" +di);
+					break;
+				default:
+					document.write("type correct number");
+					break;
+
+				}
+		}
+
+
+	</script>
+</head>
+<body>
+	<pre>	
+			Press 1 for addition
+			Press 2 for substraction
+			Press 3 for Multiplication
+			Press 4 for Divition 
+			<input type="text" id="num">
+	</pre>
+	<h1>Enter The Value of X and Y</h1>
+	<input type="text" placeholder="enter The value of x" id="num1">
+	<input type="text" placeholder="enter the value of y" id="num2">
+	<br>
+	<br>
+	
+	<script type="text/javascript">
+		setTimeout("demo()", 9000);
+	</script>
+</body>
+</html>
