@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> pyramid</title>
+	<title>Pyramid</title>
 </head>
 <body>
 <script type="text/javascript">
-      for(i=1;i<=7;i++)
-      {
-          for(j=1;j<=4;j++)
-          {
-            if(((j>1) && (j<=i)) && ((j<=1) &&(j<=8-i)))
-              {
-              document.write("*");
-              }
-              else
-              { 
-              document.write();
-              }
-          }
-          document.write("<br/>");
-      }
+		
+		for(i=1; i<=7; i++)	//row
+		{
+			for(j=1;j<=4; j++)  //columns
+			{
+				if(((j>=1) && (j<=i)) && ((j>=1) && (j<= 8-i))){
+
+					document.write("*");
+				}
+				else{
+					document.write("<span style='visibility:hidden;'> j </span>");
+				}
+				
+			}
+
+			document.write("<br/>");
+		}
+
 </script>
+
 </body>
 </html>
