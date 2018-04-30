@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator 1.0</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width ,initial-scale=1">
+	<style type="text/css">
+		
+* {
+  box-sizing: border-box;}
+		.main{
+				border: solid black ;
+				border-radius: 20px;
+				padding: 5px;
+				height: 550px;
+				background-color: pink ;
+				overflow: auto;
+
+		}
+		.screen{
+				margin-top: 0px;
+				border-radius: 5px;
+				padding: 30px;
+				background-color: red;
+				width: auto;
+		}
+		.keypad{
+				border-radius: 5px;
+				height: 326px;
+				margin: 0px;
+				padding: 5px;
+				width: auto;
+				position: relative;
+				background-color:red;
+				
+			}
+
+			#one, #two, #three,#four, #five, #six, #seven,#eight, #nine, #zero, #plus,#minus,#divide,#multiply,#delete, #equal
+			{
+				font-size: 24px;
+				padding: 20px ;
+				width: 24.1%;
+			}
+			.first , .second , .third, .fourth
+			{
+				width: 99.70%;
+				padding: 0px; 
+				margin:0px;
+			}
+			
+</style>
+</script>
+</head>
+<body>			
+	<div class="main">
+	<h1 id="h" style="text-align: center; margin: 0px; padding: 0px;">Calculator 1.0</h1>
+		<div class="screen" >
+			<input type="text" id="txt" style=" height:100px; width: 100%; padding:0px; margin-top: 0px; text-align: right;" value="" disabled>
+		</div>
+
+		<div class="keypad">
+			<div class="first">
+				<button id="one" onclick="txt.value +='1'">1</button>
+				<button id="two" onclick="txt.value +='2'">2</button>
+				<button id="three" onclick="txt.value +='3'">3</button>
+				<button id="delete" onclick="txt.value =''">C</button>	
+			</div>
+			<dir class="second" >
+				<button id="four" onclick="txt.value +='4'">4</button>
+				<button id="five" onclick="txt.value +='5'">5</button>
+				<button id="six" onclick="txt.value +='6'">6</button>
+				<button id="divide" onclick="txt.value +='/'">/</button>
+			</dir>
+			<div class="third" >
+				<button id="seven" onclick="txt.value +='7'">7</button>
+				<button id="eight" onclick="txt.value +='8'">8</button>
+				<button id="nine" onclick="txt.value +='9'">9</button>
+				<button id="multiply" onclick="txt.value +='*'">X</button>
+				
+			</div>
+			<div class="fourth">
+				<button id="plus" onclick="txt.value +='+'">+</button>
+				<button id="zero" onclick="txt.value +='0'">0</button>
+				<button id="minus" onclick="txt.value +='-'">-</button>
+				<button id="equal" onclick="txt.value=eval(txt.value)">=</button>
+			</div>
+		</div>
+</div>
+
+</body>
+</html>
