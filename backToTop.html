@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">
 		#myBtn{
+			display: none;
 			position: fixed;
     bottom: 20px;
     right: 30px;
@@ -13,8 +14,9 @@
     border: none;
     outline: none;
     color: white;
-    padding: 15px;
     background-color: rebeccapurple;
+  cursor: pointer;
+  padding: 15px;
     border-radius: 17px;
 		}
 
@@ -26,7 +28,7 @@
 </head>
 <body>
 
-<button onclick="top();" id="myBtn" title="Go to top">Top</button>
+<button onclick="topfunction()" id="myBtn" title="Go to top">Top</button>
 <script type="text/javascript">
 	window.onscroll = function(){scrollFunction()};
 		function scrollFunction(){
@@ -37,21 +39,20 @@
 		}
 		}
 
-function top(){
-  document.body.scrollTop = 0;
+function topfunction(){
+	document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 	
 </script>
 
 
+
+
 <div style="background-color:black;color:white;padding:30px">Scroll Down</div>
-<div style="background-color:lightgrey;padding:30px 30px 2500px"
->This example demonstrates how to create a "scroll to top" button that becomes visible when the user starts to scroll the page.
+<div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible when the user starts to scroll the page.
 This example demonstrates how to create a "scroll to top" button that becomes visible when the user starts to scroll the page.
 </div>
-
-
 
 
 </body>
