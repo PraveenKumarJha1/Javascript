@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Use Javascript To Type Out Text On Webpage</title>
+</head>
+<body>
+<div id="type_text"></div>
+<script>
+var myText = 'hello my name is praveen';
+var myArray = myText.split("");
+var loopTimer;
+function frameLooper() {
+if(myArray.length > 0) {
+document.getElementById("type_text").innerHTML += myArray.shift();
+} else {
+clearTimeout(loopTimer);
+return false;
+}
+loopTimer = setTimeout('frameLooper()',70);
+}
+frameLooper();
+</script>
+</body>
+</html>
